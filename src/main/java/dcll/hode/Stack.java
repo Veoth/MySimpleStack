@@ -62,7 +62,7 @@ public class Stack implements SimpleStack
             throw new EmptyStackException();
 
         Item i = stack[size-1];
-        size--;
+        size = size-1;
         return i;
     }
 }
